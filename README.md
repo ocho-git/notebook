@@ -36,12 +36,12 @@ In Xcode, choose **File → Add Package Dependencies**, enter:
 https://github.com/ocho-git/notebook.git
 ```
 
-Choose **Up to Next Minor Version** from **0.1.0**, then add the **Notebook** product to your iOS app target. The repository is public; downloading the package requires no GitHub credentials. See [LICENSE](LICENSE) for permitted use.
+Choose **Up to Next Minor Version** from **0.1.1**, then add the **Notebook** product to your iOS app target. The repository is public; downloading the package requires no GitHub credentials. Licensed under the [MIT License](LICENSE).
 
 For a Swift package:
 
 ```swift
-.package(url: "https://github.com/ocho-git/notebook.git", .upToNextMinor(from: "0.1.0"))
+.package(url: "https://github.com/ocho-git/notebook.git", .upToNextMinor(from: "0.1.1"))
 ```
 
 Add `.product(name: "Notebook", package: "notebook")` to the target's dependencies.
@@ -83,7 +83,7 @@ Tap the cover or **Open notebook**. Tap/swipe pages, rotate to landscape, use **
 
 ## Give an assistant this instruction
 
-> Add the Swift package https://github.com/ocho-git/notebook.git (product/module Notebook), version 0.1.0 up to the next minor version. Read its README, Documentation/Integration.md and AGENTS.md first. Use NotebookController held in @State and NotebookView to build a book for [X]. Supply our content with NotebookDocument, NotebookLeaf and NotebookPage. Keep all app data, persistence and audio-session policy in our app. Follow the bundled demo rather than copying or recreating the SceneKit engine.
+> Add the Swift package https://github.com/ocho-git/notebook.git (product/module Notebook), version 0.1.1 up to the next minor version. Read its README, Documentation/Integration.md and AGENTS.md first. Use NotebookController held in @State and NotebookView to build a book for [X]. Supply our content with NotebookDocument, NotebookLeaf and NotebookPage. Keep all app data, persistence and audio-session policy in our app. Follow the bundled demo rather than copying or recreating the SceneKit engine.
 
 See [integration details](Documentation/Integration.md), [architecture and extraction scope](Documentation/Architecture.md), and [validation](Documentation/Validation.md).
 
@@ -95,4 +95,4 @@ See [integration details](Documentation/Integration.md), [architecture and extra
 
 This runs geometry/audio tests on the Mac and unsigned builds of the demo for generic iOS and iOS Simulator destinations. It does not boot a simulator or launch an app.
 
-Ocho source; see [LICENSE](LICENSE) for permitted use.
+Copyright © 2026 Ocho. Released under the [MIT License](LICENSE).

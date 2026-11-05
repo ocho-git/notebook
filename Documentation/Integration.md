@@ -84,4 +84,4 @@ The package synthesizes page rustle and landing sounds with AVAudioEngine. It do
 
 ## Versioning
 
-Start with `.upToNextMinor(from: "0.1.0")`. This is an initial extracted API, so minor releases before 1.0 may change source compatibility; patch releases are intended for compatible fixes. Import only `Notebook` and rely on documented public types. `Book*` types are implementation details.
+Start with `.upToNextMinor(from: "0.1.1")`. This is an initial extracted API, so minor releases before 1.0 may change source compatibility; patch releases are intended for compatible fixes. Import only `Notebook` and rely on documented public types. `Book*` types are implementation details.

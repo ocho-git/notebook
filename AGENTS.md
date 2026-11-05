@@ -12,4 +12,4 @@ Read README.md and Documentation/Integration.md before adding this package to an
 - Keep controllers isolated; any new global mutable state is a regression.
 - `./scripts/check.sh` runs Mac tests and unsigned generic iOS/device-SDK and Simulator-SDK builds. Do not launch a simulator or physical device unless the user explicitly asks for that in the current task.
 - Test claims must distinguish compilation/math checks from observed rendering, gestures, accessibility and sound on a device.
-- The repository is public; its proprietary license still applies. Do not change repository visibility or license without explicit authorization.
+- The repository is public and MIT-licensed. Preserve the copyright and license notices. Do not change repository visibility or license without explicit authorization.

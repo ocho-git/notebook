@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 5 November 2026
+
+- Release Notebook under the MIT License, retaining Ocho copyright attribution.
+- Update installation examples to use the MIT-licensed version.
+- Include the rendered README gallery and reproducible visual examples.
+
 ## 0.1.0 — 5 November 2026
 
 Initial standalone extraction of Zen Garden's animated SceneKit field-guide book.
