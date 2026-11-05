@@ -1,0 +1,29 @@
+name: NotebookDemo
+options:
+  deploymentTarget:
+    iOS: '18.0'
+packages:
+  Notebook:
+    path: ..
+targets:
+  NotebookDemo:
+    type: application
+    platform: iOS
+    sources: [NotebookDemo]
+    dependencies:
+      - package: Notebook
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ocho.notebook.demo
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: 'UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight'
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: 'UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight'
+        TARGETED_DEVICE_FAMILY: '1,2'
+        SWIFT_VERSION: '5.0'
+schemes:
+  NotebookDemo:
+    build:
+      targets:
+        NotebookDemo: all
