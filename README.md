@@ -2,6 +2,8 @@
 
 A reusable SceneKit book for SwiftUI apps. A leather cover lifts from the screen's edge, opens, and folds real page geometry under your finger. Extracted from Zen Garden's field guide, with app content and persistence removed.
 
+![Notebook opening, turning a page and closing](Documentation/Images/notebook-motion.gif)
+
 - Animated cover, page curl, tap/swipe turning, riffling, pinch and drag-to-close.
 - One reading page in portrait; a two-page spread in landscape.
 - Custom SwiftUI pages, cover lettering/colors, lighting and edge placement.
@@ -9,6 +11,22 @@ A reusable SceneKit book for SwiftUI apps. A leather cover lifts from the screen
 - Procedural page sounds, opt-in. Page textures load near the current spread and are released after closing.
 
 **Requirements:** iOS/iPadOS 18+, Xcode 26+ with Swift 6.2. The package compiles in Swift 5 language mode and can be imported by Swift 6 apps. macOS 15 is declared solely to run portable geometry/audio tests; the public book UI is iOS-only. SceneKit is the retained rendering backend. No native macOS, tvOS or visionOS UI is provided.
+
+## A look inside
+
+The same book can hold a field guide, a journal, recipes, or lessons. These examples use custom SwiftUI pages and two cover styles.
+
+![An open notebook with observation notes and a leaf illustration](Documentation/Images/spread.png)
+
+| Leather and gold foil | A page mid-fold |
+| --- | --- |
+| ![Brown leather cover with gold Notebook lettering](Documentation/Images/cover.png) | ![A physical page curling across the open book](Documentation/Images/page-fold.png) |
+
+| Another cover, another app | Your own content |
+| --- | --- |
+| ![Green leather Family Recipes cover](Documentation/Images/recipes-cover.png) | ![Recipe pages showing kitchen notes and Sunday pancakes](Documentation/Images/recipes.png) |
+
+*Rendered offscreen from the package's actual SceneKit engine and SwiftUI page snapshots. The animation uses its real springs; staging keeps the closed cover fully visible. These are documentation fixtures, not device screenshots. [Reproduce the images](Documentation/VisualExamples.md).*
 
 ## Install
 

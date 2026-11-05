@@ -6,7 +6,8 @@ Initial extraction checked on 5 November 2026 using Xcode 27.1 (27A9275).
 - Unsigned **generic iOS** demo build: passed.
 - Unsigned **generic iOS Simulator** demo build: passed. This compiles for the Simulator SDK; it does not run a simulator.
 - The checked-in Xcode project imports and uses the package as a separate local dependency, exercising its public API across the module boundary.
-- No simulator or physical device was booted, opened or used. Rendering appearance, touch behavior, VoiceOver behavior, interruption handling and subjective audio have not been observed for the extracted demo. The original app's prior testing is not a substitute for testing this package in a new host.
+- Offscreen documentation renders: the actual SceneKit renderer and SwiftUI page snapshots were compiled for Mac Catalyst and rendered without an application window. Five stills and a 150-frame opening/turning/closing GIF were generated; stills and representative animation frames were visually inspected. See [visual examples](VisualExamples.md).
+- No simulator or physical device was booted, opened or used. On-device appearance, touch behavior, VoiceOver behavior, interruption handling and subjective audio have not been observed for the extracted demo. The original app's prior testing is not a substitute for testing this package in a new host.
 
 Run `./scripts/check.sh` to repeat the automated checks. It does not require distribution signing. Xcode may print a harmless App Intents metadata warning because the demo has no App Intents dependency.
 
